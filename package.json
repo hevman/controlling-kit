@@ -1,0 +1,43 @@
+{
+  "name": "controlling-kit",
+  "version": "0.1.0",
+  "description": "Finance and controlling calculations for budget variance, contribution margin, break-even and working capital.",
+  "type": "module",
+  "bin": {
+    "controlling-kit": "./dist/cli.js",
+    "ckit": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "node -e \"fs.rmSync('dist', { recursive: true, force: true })\"",
+    "build": "npm run clean && tsc",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "finance",
+    "controlling",
+    "budget",
+    "variance",
+    "break-even",
+    "working-capital",
+    "cli"
+  ],
+  "author": "Pawel",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "typescript": "^5.7.3"
+  }
+}
