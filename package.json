@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "Finance and controlling calculations for budget variance, contribution margin, break-even and working capital.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hevman/controlling-kit.git"
+  },
+  "homepage": "https://github.com/hevman/controlling-kit#readme",
+  "bugs": {
+    "url": "https://github.com/hevman/controlling-kit/issues"
+  },
   "bin": {
     "controlling-kit": "./dist/cli.js",
     "ckit": "./dist/cli.js"
